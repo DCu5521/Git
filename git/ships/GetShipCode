@@ -1,0 +1,9 @@
+#Code written in Python.
+
+class ShipmentService:
+    def __init__(self):
+        self.shipments = []
+    def get_shipment(self, resource_id):
+        for shipment in self.shipments:
+            if shipment.resource_id == resource_id:
+                return shipment

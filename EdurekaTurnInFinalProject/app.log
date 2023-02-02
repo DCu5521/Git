@@ -1,0 +1,4 @@
+2023-01-24 18:27:34,590 - __main__ - DEBUG - debug message
+2023-01-24 18:27:34,592 - __main__ - INFO - info message
+2023-01-24 18:27:34,592 - __main__ - WARNING - warning message
+2023-01-24 18:27:34,592 - __main__ - ERROR - error message

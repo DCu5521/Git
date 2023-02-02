@@ -1,0 +1,10 @@
+#Code written in Python.
+
+
+class ShipmentService:
+    def __init__(self):
+        self.shipments = []
+    def filter_shipments(self, filter_func):
+        return filter(filter_func, self.shipments)
+    def sort_shipments(self, sort_func):
+        return sorted(self.shipments, key=sort_func)

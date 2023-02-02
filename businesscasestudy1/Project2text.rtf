@@ -1,0 +1,490 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 benjaminadams@Benjamins-MBP ~ % mkdir Business\
+benjaminadams@Benjamins-MBP ~ % cd Business\
+benjaminadams@Benjamins-MBP Business % git init\
+Initialized empty Git repository in /Users/benjaminadams/Business/.git/\
+benjaminadams@Benjamins-MBP Business % git remote add origin https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+benjaminadams@Benjamins-MBP Business % git clone https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+Cloning into 'businesscasestudy'...\
+remote: Enumerating objects: 3, done.\
+remote: Counting objects: 100% (3/3), done.\
+remote: Compressing objects: 100% (2/2), done.\
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+Unpacking objects: 100% (3/3), done.\
+benjaminadams@Benjamins-MBP Business % ls\
+businesscasestudy\
+benjaminadams@Benjamins-MBP Business % ls -al\
+total 0\
+drwxr-xr-x   4 benjaminadams  staff   128 Jan 16 12:42 .\
+drwxr-xr-x+ 54 benjaminadams  staff  1728 Jan 16 12:35 ..\
+drwxr-xr-x  10 benjaminadams  staff   320 Jan 16 12:39 .git\
+drwxr-xr-x   4 benjaminadams  staff   128 Jan 16 12:42 businesscasestudy\
+benjaminadams@Benjamins-MBP Business % cd businesscasestudy\
+benjaminadams@Benjamins-MBP businesscasestudy % ls\
+README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % cd\
+benjaminadams@Benjamins-MBP ~ % cd Business\
+benjaminadams@Benjamins-MBP Business % touch README.md\
+benjaminadams@Benjamins-MBP Business % nano README.md\
+benjaminadams@Benjamins-MBP Business % git add READ.md\
+fatal: pathspec 'READ.md' did not match any files\
+benjaminadams@Benjamins-MBP Business % git add README.md\
+benjaminadams@Benjamins-MBP Business % git commit -m "first of commits"\
+[master (root-commit) 151cb4d] first of commits\
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 README.md\
+benjaminadams@Benjamins-MBP Business % git push -u origin master\
+Counting objects: 3, done.\
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0)\
+remote: \
+remote: To create a merge request for master, visit:\
+remote:   https://gitlab.com/NimboSurfer22/businesscasestudy/-/merge_requests/new?merge_request%5Bsource_branch%5D=master\
+remote: \
+To https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+ * [new branch]      master -> master\
+Branch 'master' set up to track remote branch 'master' from 'origin'.\
+benjaminadams@Benjamins-MBP Business % git pull origin master\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * branch            master     -> FETCH_HEAD\
+Already up to date.\
+benjaminadams@Benjamins-MBP Business % git branch feature_branch  \
+benjaminadams@Benjamins-MBP Business % git checkout feature_branch\
+Switched to branch 'feature_branch'\
+benjaminadams@Benjamins-MBP Business % git staus\
+git: 'staus' is not a git command. See 'git --help'.\
+\
+The most similar command is\
+	status\
+benjaminadams@Benjamins-MBP Business % git status\
+On branch feature_branch\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	businesscasestudy/\
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+benjaminadams@Benjamins-MBP Business % git branch status\
+benjaminadams@Benjamins-MBP Business % \
+benjaminadams@Benjamins-MBP Business % git add swagger.py\
+fatal: pathspec 'swagger.py' did not match any files\
+benjaminadams@Benjamins-MBP Business % git add Swagger.py\
+fatal: pathspec 'Swagger.py' did not match any files\
+benjaminadams@Benjamins-MBP Business % cd\
+benjaminadams@Benjamins-MBP ~ % cd Business\
+benjaminadams@Benjamins-MBP Business % git add /Users/benjaminadams/Business/businesscasestudy/Swagger.py \
+benjaminadams@Benjamins-MBP Business % git commit -m "Included swagger endpoints"\
+[feature_branch fb9f42d] Included swagger endpoints\
+ 1 file changed, 19 insertions(+)\
+ create mode 100644 businesscasestudy/Swagger.py\
+benjaminadams@Benjamins-MBP Business % git push origin feature_branch\
+Counting objects: 4, done.\
+Delta compression using up to 8 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (4/4), 666 bytes | 666.00 KiB/s, done.\
+Total 4 (delta 0), reused 0 (delta 0)\
+remote: \
+remote: To create a merge request for feature_branch, visit:\
+remote:   https://gitlab.com/NimboSurfer22/businesscasestudy/-/merge_requests/new?merge_request%5Bsource_branch%5D=feature_branch\
+remote: \
+To https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+ * [new branch]      feature_branch -> feature_branch\
+benjaminadams@Benjamins-MBP Business % git branch\
+* feature_branch\
+  master\
+  status\
+benjaminadams@Benjamins-MBP Business % git branch\
+* feature_branch\
+  master\
+  status\
+benjaminadams@Benjamins-MBP Business % cd businesscasestudy\
+benjaminadams@Benjamins-MBP businesscasestudy % git branch\
+* main\
+benjaminadams@Benjamins-MBP businesscasestudy % cd Business\
+cd: no such file or directory: Business\
+benjaminadams@Benjamins-MBP businesscasestudy % cd\
+benjaminadams@Benjamins-MBP ~ % cd Business\
+benjaminadams@Benjamins-MBP Business % git checkout master\
+Switched to branch 'master'\
+Your branch is up to date with 'origin/master'.\
+benjaminadams@Benjamins-MBP Business % git branch\
+  feature_branch\
+* master\
+  status\
+benjaminadams@Benjamins-MBP Business % git branch status\
+fatal: A branch named 'status' already exists.\
+benjaminadams@Benjamins-MBP Business % git fetch --all\
+Fetching origin\
+remote: Enumerating objects: 3, done.\
+remote: Counting objects: 100% (3/3), done.\
+remote: Compressing objects: 100% (2/2), done.\
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+Unpacking objects: 100% (3/3), done.\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * [new branch]      main       -> origin/main\
+benjaminadams@Benjamins-MBP Business % git branch -a\
+  feature_branch\
+* master\
+  status\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP Business % git branch -a\
+  feature_branch\
+* master\
+  status\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP Business % git fetch --all\
+Fetching origin\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * [new branch]      TestBranch -> origin/TestBranch\
+benjaminadams@Benjamins-MBP Business % git branch -a  \
+  feature_branch\
+* master\
+  status\
+  remotes/origin/TestBranch\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP Business % git fetch --all\
+Fetching origin\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * [new branch]      Testbranch1 -> origin/Testbranch1\
+benjaminadams@Benjamins-MBP Business % git branch -a  \
+  feature_branch\
+* master\
+  status\
+  remotes/origin/TestBranch\
+  remotes/origin/Testbranch1\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP Business % git checkout feature_branch\
+Switched to branch 'feature_branch'\
+benjaminadams@Benjamins-MBP Business % git fetch --all            \
+Fetching origin\
+benjaminadams@Benjamins-MBP Business % git branch -a              \
+* feature_branch\
+  master\
+  status\
+  remotes/origin/TestBranch\
+  remotes/origin/Testbranch1\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP Business % git pull origin Testbranch1\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * branch            Testbranch1 -> FETCH_HEAD\
+Already up to date.\
+benjaminadams@Benjamins-MBP Business % git checkout Testbranch1\
+Branch 'Testbranch1' set up to track remote branch 'Testbranch1' from 'origin'.\
+Switched to a new branch 'Testbranch1'\
+benjaminadams@Benjamins-MBP Business % git commit -m "Testbranc1 add-in"\
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+Untracked files:\
+	businesscasestudy/\
+\
+nothing added to commit but untracked files present\
+benjaminadams@Benjamins-MBP Business % git log\
+commit 151cb4d223f5b4045acc5ace4a5236f6493d9262 (HEAD -> Testbranch1, origin/master, origin/Testbranch1, origin/TestBranch, status, master)\
+Author: Ben <newemail@gmail.com>\
+Date:   Mon Jan 16 12:45:51 2023 -0600\
+\
+    first of commits\
+benjaminadams@Benjamins-MBP Business % git branch\
+* Testbranch1\
+  feature_branch\
+  master\
+  status\
+benjaminadams@Benjamins-MBP Business % ls   \
+README.md		businesscasestudy\
+benjaminadams@Benjamins-MBP Business % nano README.md\
+benjaminadams@Benjamins-MBP Business % git commit -m "Testbranc1 add-in"\
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+Changes not staged for commit:\
+	modified:   README.md\
+\
+Untracked files:\
+	businesscasestudy/\
+\
+no changes added to commit\
+benjaminadams@Benjamins-MBP Business % cd businesscasestudy\
+benjaminadams@Benjamins-MBP businesscasestudy % ls\
+README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % git branch\
+* main\
+benjaminadams@Benjamins-MBP businesscasestudy % git checkout Testbranch1\
+error: pathspec 'Testbranch1' did not match any file(s) known to git.\
+benjaminadams@Benjamins-MBP businesscasestudy % git branch              \
+* main\
+benjaminadams@Benjamins-MBP businesscasestudy % git fetch --all                  \
+Fetching origin\
+remote: Enumerating objects: 7, done.\
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7\
+Unpacking objects: 100% (7/7), done.\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * [new branch]      Testbranch1    -> origin/Testbranch1\
+ * [new branch]      Testbranch2    -> origin/Testbranch2\
+ * [new branch]      Testbranch2.0  -> origin/Testbranch2.0\
+ * [new branch]      feature_branch -> origin/feature_branch\
+ * [new branch]      master         -> origin/master\
+benjaminadams@Benjamins-MBP businesscasestudy % git branch -a                    \
+* main\
+  remotes/origin/HEAD -> origin/main\
+  remotes/origin/Testbranch1\
+  remotes/origin/Testbranch2\
+  remotes/origin/Testbranch2.0\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP businesscasestudy % nano README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % git commit -m "Testbranc2.0 add-in"\
+On branch main\
+Your branch is up to date with 'origin/main'.\
+\
+Changes not staged for commit:\
+	modified:   README.md\
+\
+no changes added to commit\
+benjaminadams@Benjamins-MBP businesscasestudy % nano README.md                     \
+benjaminadams@Benjamins-MBP businesscasestudy % nano README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % git checkout branch Testbranch2.0\
+error: pathspec 'branch' did not match any file(s) known to git.\
+error: pathspec 'Testbranch2.0' did not match any file(s) known to git.\
+benjaminadams@Benjamins-MBP businesscasestudy % git checkout Testbranch2.0 \
+error: Your local changes to the following files would be overwritten by checkout:\
+	README.md\
+Please commit your changes or stash them before you switch branches.\
+Aborting\
+benjaminadams@Benjamins-MBP businesscasestudy % git commit -m "Testbranc2.0 add-in"\
+On branch main\
+Your branch is up to date with 'origin/main'.\
+\
+Changes not staged for commit:\
+	modified:   README.md\
+\
+no changes added to commit\
+benjaminadams@Benjamins-MBP businesscasestudy % cd \
+benjaminadams@Benjamins-MBP ~ % cd Business\
+benjaminadams@Benjamins-MBP Business % ls\
+README.md		businesscasestudy\
+benjaminadams@Benjamins-MBP Business % cd businesscasestudy\
+benjaminadams@Benjamins-MBP businesscasestudy % ls\
+README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % git branch\
+* main\
+benjaminadams@Benjamins-MBP businesscasestudy % git checkout Testbranch2.0\
+error: Your local changes to the following files would be overwritten by checkout:\
+	README.md\
+Please commit your changes or stash them before you switch branches.\
+Aborting\
+benjaminadams@Benjamins-MBP businesscasestudy % git branch -a                      \
+* main\
+  remotes/origin/HEAD -> origin/main\
+  remotes/origin/Testbranch1\
+  remotes/origin/Testbranch2\
+  remotes/origin/Testbranch2.0\
+  remotes/origin/feature_branch\
+  remotes/origin/main\
+  remotes/origin/master\
+benjaminadams@Benjamins-MBP businesscasestudy % ls\
+README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % nano README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % git commit -m "Testbranc2.0 add-in"\
+On branch main\
+Your branch is up to date with 'origin/main'.\
+\
+Changes not staged for commit:\
+	modified:   README.md\
+\
+no changes added to commit\
+benjaminadams@Benjamins-MBP businesscasestudy % git checkout Testbranch1\
+error: Your local changes to the following files would be overwritten by checkout:\
+	README.md\
+Please commit your changes or stash them before you switch branches.\
+Aborting\
+benjaminadams@Benjamins-MBP businesscasestudy % ls\
+README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % cd Business\
+cd: no such file or directory: Business\
+benjaminadams@Benjamins-MBP businesscasestudy % cd\
+benjaminadams@Benjamins-MBP ~ % cd Business\
+benjaminadams@Benjamins-MBP Business % clear\
+\
+benjaminadams@Benjamins-MBP Business % git branch\
+* Testbranch1\
+  feature_branch\
+  master\
+  status\
+benjaminadams@Benjamins-MBP Business % git pull origin Testbranch1\
+From https://gitlab.com/NimboSurfer22/businesscasestudy\
+ * branch            Testbranch1 -> FETCH_HEAD\
+   151cb4d..fb9f42d  Testbranch1 -> origin/Testbranch1\
+Updating 151cb4d..fb9f42d\
+Fast-forward\
+ businesscasestudy/Swagger.py | 19 +++++++++++++++++++\
+ 1 file changed, 19 insertions(+)\
+ create mode 100644 businesscasestudy/Swagger.py\
+benjaminadams@Benjamins-MBP Business % git checkout Testbranch1\
+M	README.md\
+Already on 'Testbranch1'\
+Your branch is up to date with 'origin/Testbranch1'.\
+benjaminadams@Benjamins-MBP Business % git commit -m "testing branch"\
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+Changes not staged for commit:\
+	modified:   README.md\
+\
+Untracked files:\
+	businesscasestudy/README.md\
+\
+no changes added to commit\
+benjaminadams@Benjamins-MBP Business % nano README.md\
+benjaminadams@Benjamins-MBP Business % git commit -m "testing branch"\
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+Changes not staged for commit:\
+	modified:   README.md\
+\
+Untracked files:\
+	businesscasestudy/README.md\
+\
+no changes added to commit\
+benjaminadams@Benjamins-MBP Business % git add --all\
+benjaminadams@Benjamins-MBP Business % git commit -m "testing branch"\
+[Testbranch1 f8812af] testing branch\
+ 2 files changed, 104 insertions(+)\
+ create mode 100644 businesscasestudy/README.md\
+benjaminadams@Benjamins-MBP Business % git push origin Testbranch1\
+Counting objects: 5, done.\
+Delta compression using up to 8 threads.\
+Compressing objects: 100% (5/5), done.\
+Writing objects: 100% (5/5), 3.02 KiB | 3.02 MiB/s, done.\
+Total 5 (delta 0), reused 0 (delta 0)\
+remote: \
+remote: To create a merge request for Testbranch1, visit:\
+remote:   https://gitlab.com/NimboSurfer22/businesscasestudy/-/merge_requests/new?merge_request%5Bsource_branch%5D=Testbranch1\
+remote: \
+To https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+   fb9f42d..f8812af  Testbranch1 -> Testbranch1\
+benjaminadams@Benjamins-MBP Business % git branch\
+* Testbranch1\
+  feature_branch\
+  master\
+  status\
+benjaminadams@Benjamins-MBP Business % git tag -a v1.1 Release 1.1\
+fatal: too many params\
+benjaminadams@Benjamins-MBP Business % git tag -a v1.1 -m ' Release 1.1'\
+benjaminadams@Benjamins-MBP Business % git push origin v1.1\
+Counting objects: 1, done.\
+Writing objects: 100% (1/1), 156 bytes | 156.00 KiB/s, done.\
+Total 1 (delta 0), reused 0 (delta 0)\
+To https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+ * [new tag]         v1.1 -> v1.1\
+benjaminadams@Benjamins-MBP Business % git pull\
+Already up to date.\
+benjaminadams@Benjamins-MBP Business % git status\
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+nothing to commit, working tree clean\
+benjaminadams@Benjamins-MBP Business % README.md\
+zsh: command not found: README.md\
+benjaminadams@Benjamins-MBP Business % nano README.md\
+benjaminadams@Benjamins-MBP Business % git status    \
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	modified:   README.md\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+benjaminadams@Benjamins-MBP Business % git add README.md\
+benjaminadams@Benjamins-MBP Business % git status       \
+On branch Testbranch1\
+Your branch is up to date with 'origin/Testbranch1'.\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	modified:   README.md\
+\
+benjaminadams@Benjamins-MBP Business % git add README.md\
+benjaminadams@Benjamins-MBP Business % git commit -m 'Changes from tag 1.1 to tag 1.2 volumes'\
+[Testbranch1 b7134e3] Changes from tag 1.1 to tag 1.2 volumes\
+ 1 file changed, 2 insertions(+)\
+benjaminadams@Benjamins-MBP Business % git tag -a v1.2 -m 'Release 1.2'\
+benjaminadams@Benjamins-MBP Business % git push origin v1.2\
+Counting objects: 4, done.\
+Delta compression using up to 8 threads.\
+Compressing objects: 100% (4/4), done.\
+Writing objects: 100% (4/4), 489 bytes | 489.00 KiB/s, done.\
+Total 4 (delta 0), reused 0 (delta 0)\
+To https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+ * [new tag]         v1.2 -> v1.2\
+benjaminadams@Benjamins-MBP Business % git tag\
+v1.1\
+v1.2\
+benjaminadams@Benjamins-MBP Business % git ls-remote --tags <remote>\
+zsh: parse error near `\\n'\
+benjaminadams@Benjamins-MBP Business % git ls-remote --tags <remote>\
+zsh: parse error near `\\n'\
+benjaminadams@Benjamins-MBP Business % git ls-remote --tags businesscasestudy\
+benjaminadams@Benjamins-MBP Business % git push --delete origin v1.1\
+To https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+ - [deleted]         v1.1\
+benjaminadams@Benjamins-MBP Business % git tag -d v1.1\
+Deleted tag 'v1.1' (was b5117a4)\
+benjaminadams@Benjamins-MBP Business % git tag\
+v1.2\
+benjaminadams@Benjamins-MBP Business % git push origin master\
+Everything up-to-date\
+benjaminadams@Benjamins-MBP Business % git push origin main\
+error: src refspec main does not match any.\
+error: failed to push some refs to 'https://gitlab.com/NimboSurfer22/businesscasestudy.git'\
+benjaminadams@Benjamins-MBP Business % git clone https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+fatal: destination path 'businesscasestudy' already exists and is not an empty directory.\
+benjaminadams@Benjamins-MBP Business % cd\
+benjaminadams@Benjamins-MBP ~ % businesscasestudy\
+zsh: command not found: businesscasestudy\
+benjaminadams@Benjamins-MBP ~ % git clone https://gitlab.com/NimboSurfer22/businesscasestudy.git\
+Cloning into 'businesscasestudy'...\
+remote: Enumerating objects: 19, done.\
+remote: Counting objects: 100% (9/9), done.\
+remote: Compressing objects: 100% (9/9), done.\
+remote: Total 19 (delta 1), reused 0 (delta 0), pack-reused 10\
+Unpacking objects: 100% (19/19), done.\
+benjaminadams@Benjamins-MBP ~ % cd businesscasestudy\
+benjaminadams@Benjamins-MBP businesscasestudy % git pull\
+Already up to date.\
+benjaminadams@Benjamins-MBP businesscasestudy % git add\
+Nothing specified, nothing added.\
+Maybe you wanted to say 'git add .'?\
+benjaminadams@Benjamins-MBP businesscasestudy % git add .\
+benjaminadams@Benjamins-MBP businesscasestudy % git commit -m "final save"\
+On branch main\
+Your branch is up to date with 'origin/main'.\
+\
+nothing to commit, working tree clean\
+benjaminadams@Benjamins-MBP businesscasestudy % ls\
+README.md\
+benjaminadams@Benjamins-MBP businesscasestudy % git push\
+Everything up-to-date\
+benjaminadams@Benjamins-MBP businesscasestudy % }

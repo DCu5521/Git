@@ -1,0 +1,20 @@
+#Code written in Python.
+
+
+class Shipment:
+    def __init__(self, resource_id, order, shipment_location, shipment_date, expired_date, delivery_text, delivery_date, tracking_number, charge_amount):
+        self.resource_id = resource_id
+        self.order = order
+        self.shipment_location = shipment_location
+        self.shipment_date = shipment_date
+        self.expired_date = expired_date
+        self.delivery_text = delivery_text
+        self.delivery_date = delivery_date
+        self.tracking_number = tracking_number
+        self.charge_amount = charge_amount
+
+class ShipmentService:
+    def __init__(self):
+        self.shipments = []
+    def add_shipment(self, shipment):
+        self.shipments.append(shipment)

@@ -1,0 +1,7 @@
+#Code written in Python.
+
+class ShipmentService:
+    def __init__(self):
+        self.shipments = []
+    def delete_shipment(self, shipment):
+        self.shipments.remove(shipment)
